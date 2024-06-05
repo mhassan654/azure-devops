@@ -1,0 +1,9 @@
+az group create --name storage-resource-group --location eastus
+
+az storage account create 
+--name storagelearnlive
+--resource-group storage-resource-group 
+--sku Standard_LRS 
+--kind StorageV2 
+--access-tier Hot
+--https-only true
